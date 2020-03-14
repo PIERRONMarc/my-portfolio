@@ -4,7 +4,7 @@ import './footer.scss';
 class Footer extends Component {
     render() { 
         return (
-            <footer>
+            <footer className="footer">
                 <ul>
                     <li>github</li>
                     <li>linkedin</li>

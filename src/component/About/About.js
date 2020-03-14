@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
 import './about.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
 
 class About extends Component {
     render() { 
         return (
-            <section>
-                <h1>A propos de moi</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facere eveniet cupiditate nesciunt exercitationem blanditiis, beatae amet. Culpa eveniet, sapiente dicta, et consectetur ratione fugit nam accusantium voluptatem ea enim.Quaerat, amet. Ea adipisci vel dignissimos cumque repellat vero quaerat eum magnam amet deserunt aliquam nesciunt consequuntur, beatae necessitatibus sint saepe recusandae? Fugiat ducimus ut tempore labore atque. Doloribus, molestias.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vero impedit delectus a dolore nesciunt velit cum laboriosam placeat maxime quod perferendis, doloremque id molestias enim fugiat praesentium autem iure?Deleniti eaque ad quisquam quod voluptas voluptatibus consequuntur aliquid perspiciatis, similique quae. Sit, animi fugiat sint delectus, tenetur saepe similique nihil magni, voluptates laudantium possimus repellendus cum vel unde necessitatibus.
-                </p>
+            <section className="about">
+                <div className="title-wrapper">
+                    <h1 className="title">À propos de <span className="title--highlight">moi</span></h1>
+                </div>
+                <div className="p-relative">
+                    <div className="about__text-wrapper">
+                        <p className="about__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nihil, quasi, doloremque illo amet cum ipsa nobis labore voluptatem eum quaerat nam iure eos sit corporis voluptas vero nostrum! Enim!
+                        </p>
+                        <p className="about__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dignissimos officiis perferendis distinctio perspiciatis rerum quibusdam labore fuga tempore ut iusto beatae eveniet totam error accusamus excepturi commodi quas! Pariatur.
+                        </p>
+                    </div>
+                    <div className="about__curriculum">
+                        <FontAwesomeIcon icon={faFileAlt} />
+                    </div>
+                </div>
             </section>
         );
     }

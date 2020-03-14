@@ -9,3 +9,48 @@
     // display: inline-block;
     margin: 0;
 }
+
+.container {
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.title {
+    margin:0;
+    font-size: 4.8em;
+    text-transform: uppercase;
+    padding: 1.8rem 0;
+
+    &--highlight {
+        color: $primary-color;
+    }
+
+    &-wrapper {
+        position: relative;
+        padding: 1rem 0;
+        display: inline-block;
+        margin-bottom: 2vh;
+    }
+
+    &::before {
+        content: "<h1>";
+        @extend .html-tags;
+        position: absolute;
+        font-size: 1.8rem;
+        text-transform: initial;
+        left: 0;
+        top: 0;
+        margin-right: 2.5rem;
+    }
+
+    &::after {
+        content: "</h1>";
+        @extend .html-tags;
+        position: absolute;
+        font-size: 1.8rem;
+        text-transform: initial;
+        bottom: 0;
+        right:0;
+        margin-left: 2.5rem;
+    }
+}

@@ -10,10 +10,6 @@
         justify-content: center;
     }
 
-    &__job-wrapper {
-        margin-top: 10vh;
-    }
-
     &__title {
         margin: 0;
         font-size: 4.8em;
@@ -29,10 +25,15 @@
         color: $secondary-color;
         font-weight: 300;
         font-style: italic;
+
+        &-wrapper {
+            margin-top: 10vh;
+        }
     }
 
     &__chevron {
         margin-top: 25vh;
         margin-bottom: 10vh;
+        cursor: pointer;
     }
 }
