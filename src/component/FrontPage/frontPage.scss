@@ -4,7 +4,18 @@
 
     margin-top: 30vh;
     text-align: center;
+
+    &__title-wrapper, &__job-wrapper {
+        display:flex;
+        justify-content: center;
+    }
+
+    &__job-wrapper {
+        margin-top: 10vh;
+    }
+
     &__title {
+        margin: 0;
         font-size: 4.8em;
 
         &--orange {
@@ -12,7 +23,8 @@
         }
     }
 
-    &__job-title {
+    &__job {
+        margin: 0;
         font-size: 3.6em;
         color: $secondary-color;
         font-weight: 300;
@@ -20,7 +32,7 @@
     }
 
     &__chevron {
-        margin-top: 30vh;
+        margin-top: 25vh;
         margin-bottom: 10vh;
     }
 }

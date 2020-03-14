@@ -1,16 +1,19 @@
+
+// --- Spacing ---
+
 $sizes: 12;
 
 @mixin margin-classes {
   @for $i from 1 through $sizes {
      $margin: $i * 0.25rem;
     /* margin #{$margin} */
-    .m-#{$i}  {margin: $margin;}
-    .ml-#{$i} {margin-left: $margin;}
-    .mr-#{$i} {margin-right: $margin;}
-    .mt-#{$i} {margin-top: $margin;}
-    .mb-#{$i} {margin-bottom: $margin;}
-    .mx-#{$i} {margin-left: $margin; margin-right: $margin;}
-    .my-#{$i} {margin-top: $margin; margin-bottom: $margin;}
+    .m-#{$i}  {margin: $margin !important;}
+    .ml-#{$i} {margin-left: $margin !important;}
+    .mr-#{$i} {margin-right: $margin !important;}
+    .mt-#{$i} {margin-top: $margin !important;}
+    .mb-#{$i} {margin-bottom: $margin !important;}
+    .mx-#{$i} {margin-left: $margin !important; margin-right: $margin !important;}
+    .my-#{$i} {margin-top: $margin !important; margin-bottom: $margin !important;}
   }
 }
 @include margin-classes;
@@ -20,13 +23,25 @@ $sizes: 12;
   @for $i from 1 through $sizes {
     $padding: $i * 0.25rem;
     /* padding #{$padding} */
-    .p-#{$i} {padding: $padding;}
-    .pl-#{$i} {padding-left: $padding;}
-    .pr-#{$i} {padding-right: $padding;}
-    .pt-#{$i} {padding-top: $padding;}
-    .pb-#{$i} {padding-bottom: $padding;}
-    .px-#{$i} {padding-left: $padding; padding-right: $padding;}
-    .py-#{$i} {padding-top: $padding; padding-bottom: $padding;}
+    .p-#{$i} {padding: $padding !important;}
+    .pl-#{$i} {padding-left: $padding !important;}
+    .pr-#{$i} {padding-right: $padding !important;}
+    .pt-#{$i} {padding-top: $padding !important;}
+    .pb-#{$i} {padding-bottom: $padding !important;}
+    .px-#{$i} {padding-left: $padding !important; padding-right: $padding !important;}
+    .py-#{$i} {padding-top: $padding !important; padding-bottom: $padding !important;}
   }
 }
 @include padding-classes;
+
+// --- Flex ---
+
+.align-self-start {
+  -ms-flex-item-align: start !important;
+  align-self: flex-start !important;
+}
+
+.align-self-end {
+  -ms-flex-item-align: end !important;
+  align-self: flex-end !important;
+}
