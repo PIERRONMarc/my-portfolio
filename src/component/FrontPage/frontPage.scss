@@ -1,0 +1,26 @@
+@import '../../assets/styles/colors.scss';
+
+.front-page {
+
+    margin-top: 30vh;
+    text-align: center;
+    &__title {
+        font-size: 4.8em;
+
+        &--orange {
+            color: $primary-color;
+        }
+    }
+
+    &__job-title {
+        font-size: 3.6em;
+        color: $secondary-color;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    &__chevron {
+        margin-top: 30vh;
+        margin-bottom: 10vh;
+    }
+}

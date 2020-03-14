@@ -4,9 +4,9 @@ import './header.scss';
 class Header extends Component {
     render() { 
         return ( 
-            <header>
-                <h3>&lt;html lang=" "&gt;</h3>
-                <h3>&lt;body&gt;</h3>
+            <header className="m-10">
+                <h3 className="html-tags">&lt;html lang=" "&gt;</h3>
+                <h3 className="html-tags ml-10">&lt;body&gt;</h3>
             </header>
          );
     }
