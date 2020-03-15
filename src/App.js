@@ -16,9 +16,9 @@ function App() {
       <div className="container">
         <FrontPage />
         <About />
+      </div>
         <Skills />
         <Gallery />
-      </div>
       <Footer />
     </div>
   );

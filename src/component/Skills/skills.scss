@@ -1,0 +1,45 @@
+@import '../../assets/styles/colors.scss';
+
+.skills {
+    position: relative;
+    background-color: $bg-secondary;
+    margin-top: 5vh;
+    padding: 3rem 0;
+
+    &::before {
+        position:absolute;
+        content: " ";
+        display:block;
+        top: -1rem;
+        height: 2rem;
+        transform:rotate(1deg);
+        width:100vw;
+        background-color: $bg-secondary;
+        overflow: hidden;
+    }
+
+    &::after {
+        position:absolute;
+        content: " ";
+        display:block;
+        bottom: -1rem;
+        height: 2rem;
+        transform:rotate(1deg);
+        width:100vw;
+        background-color: $bg-secondary;
+        overflow: hidden;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 5vh;
+        
+    }
+
+    &__item {
+        margin: 0 3rem;
+    }
+}
