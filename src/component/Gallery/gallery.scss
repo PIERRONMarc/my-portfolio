@@ -1,0 +1,44 @@
+.gallery {
+    margin-top: 15vh ;
+    margin-bottom: 15vh;
+}
+
+/* ---- grid ---- */
+
+.grid {
+    display:flex;
+}
+
+
+.grid-col {
+    flex: 1;
+    padding: 0 .1em;
+    // width: 25%;
+}
+
+.grid-item {
+    // width: 24%;
+
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.grid-col--2, .grid-col--3 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+}
+
+
+//jouer avec le viewport pour savoir cb de colonne en fonction de celui ci
+@media (min-width: 1080px) { 
+    .grid-col--3 {
+        display:block;
+    }
+
+}

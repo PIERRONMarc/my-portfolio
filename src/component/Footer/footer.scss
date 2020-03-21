@@ -1,3 +1,54 @@
+@import '../../assets/styles/colors.scss';
+
 .footer {
-    margin-top: 100vh;
+    height: 15vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
+    &__copyright {
+        margin-left: 10rem;
+    }
+
+    &__social {
+        z-index: 2;
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        // margin-right:
+        margin: 0;
+
+        &-wrapper {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+
+    &__social-item {
+        margin: 0 1rem;
+        color:$secondary-color;
+        font-size: 6em;
+    }
+
+    &__tags {
+        z-index: 2;
+    }
+
+    // TODO : triangle shape
+
+    // &::before {
+    //     position:absolute;
+    //     content: " ";
+    //     display:block;
+    //     top: 7rem;
+    //     right: -50;
+    //     height: 10rem;
+    //     transform:rotate(-6deg);
+    //     width:100vw;
+    //     background-color: $bg-secondary;
+    //     z-index: 1;
+    // }
+    
 }
