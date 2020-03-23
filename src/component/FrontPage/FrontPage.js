@@ -9,7 +9,7 @@ class FrontPage extends Component {
             <section className="front-page">
                 <div className="front-page__title-wrapper">
                     <h3 className="html-tags align-self-start mr-5">&lt;h1&gt;</h3>
-                    <h1 className="front-page__title">Marc <span className="front-page__title--orange">| PIERRON</span></h1> <br/>
+                    <h1 className="front-page__title">Marc <span className="front-page__title--orange front-page__title-separator">|</span> <span className="front-page__title--orange">PIERRON</span></h1> <br/>
                     <h3 className="html-tags align-self-end ml-5">&lt;/h1&gt;</h3>
                 </div>
                 <div className="front-page__job-wrapper">

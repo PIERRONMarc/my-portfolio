@@ -42,3 +42,13 @@ img {
     }
 
 }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+   
+    .gallery {
+        margin-top: 10vh ;
+        margin-bottom: 5vh;
+    }
+
+}

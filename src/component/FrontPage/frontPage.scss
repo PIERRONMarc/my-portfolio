@@ -2,8 +2,16 @@
 
 .front-page {
 
-    margin-top: 30vh;
+    // margin-top: 30vh;
+    height: 80vh;
+    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     text-align: center;
+    
 
     &__title-wrapper, &__job-wrapper {
         display:flex;
@@ -17,6 +25,10 @@
         &--orange {
             color: $primary-color;
         }
+
+        &-wrapper {
+            margin: 0 0 2rem 0;
+        }
     }
 
     &__job {
@@ -27,13 +39,27 @@
         font-style: italic;
 
         &-wrapper {
-            margin-top: 10vh;
+            // margin-top: 10vh;
         }
     }
 
     &__chevron {
-        margin-top: 25vh;
-        margin-bottom: 10vh;
+        margin-top: 15vh;
+        // margin-bottom: 10vh;
         cursor: pointer;
+        // justify-self: flex-end;
+        // position: absolute;
+        right: 0;
+        bottom: 15;
     }
+}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+   
+    .front-page__title-separator {
+        display:none;
+    }
+
 }

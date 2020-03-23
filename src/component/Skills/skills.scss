@@ -33,6 +33,7 @@
     &__icons {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         padding: 0;
         list-style: none;
         margin-bottom: 5vh;
@@ -40,6 +41,6 @@
     }
 
     &__item {
-        margin: 0 3rem;
+        margin: 1rem 3rem;
     }
 }

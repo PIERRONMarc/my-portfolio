@@ -10,7 +10,8 @@ class About extends Component {
                 <div className="title-wrapper">
                     <h1 className="title">À propos de <span className="title--highlight">moi</span></h1>
                 </div>
-                <div className="p-relative">
+                {/* <div className="p-relative"> */}
+                <div className="about__wrapper">
                     <div className="about__text-wrapper">
                         <p className="about__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nihil, quasi, doloremque illo amet cum ipsa nobis labore voluptatem eum quaerat nam iure eos sit corporis voluptas vero nostrum! Enim!

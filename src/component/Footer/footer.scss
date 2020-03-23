@@ -1,12 +1,13 @@
 @import '../../assets/styles/colors.scss';
 
 .footer {
-    height: 15vh;
+    // height: 15vh;
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
     padding: 2.5rem 2.5rem 1rem 2.5rem;
     &__copyright {
         margin-left: 10rem;
@@ -51,4 +52,36 @@
     //     z-index: 1;
     // }
     
+}
+
+// when flex is wrapping
+@media (max-width: 1025px) { 
+   
+    .footer {
+        justify-content: start;
+
+
+        // TODO : MARGIN BETWEEN TAGS
+        &__copyright {
+            margin: 0;
+            order: 2;
+            margin-bottom: 5vh;
+        }
+
+        &__social {
+            // display: block !important;
+            &-wrapper {
+                order: 1;
+                margin-bottom: 5vh;
+                width: 100%;
+            }
+        }
+
+        &__tags {
+            z-index: 2;
+            order: 3;
+            width: 100%;
+        }
+    }
+
 }
