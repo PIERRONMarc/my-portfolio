@@ -14,8 +14,6 @@ import GimeImage from '../../assets/img/grid/GIME.PNG';
 import OCSInventoryImage from '../../assets/img/grid/ocs-inventory.png';
 import MarsRoverImage from '../../assets/img/grid/mars-rover.PNG';
 
-const images = [{src: 'img/FNPEIS/mission-centrale.PNG', caption:'test'}, {src: 'img/FNPEIS/thematique.PNG'}]
-
 class Gallery extends Component {
 
     constructor(props) {
@@ -65,6 +63,7 @@ class Gallery extends Component {
         const gridImages = [
             {
                 src: MarsRoverImage,
+                alt: 'Mars Rover project',
                 codeUrl: null,
                 carouselImages: [
                     {src: 'img/mars-rover/home.PNG'},
@@ -81,6 +80,7 @@ class Gallery extends Component {
             },
             {
                 src: FNPEISImage,
+                alt: 'FNPEIS project',
                 codeUrl: null,
                 carouselImages: [
                     {src: 'img/FNPEIS/thematique.PNG'},
@@ -92,6 +92,7 @@ class Gallery extends Component {
             },
             {
                 src: IntegrationImage,
+                alt: 'Integration guide project',
                 codeUrl: null,
                 carouselImages: [
                     {src: 'img/integration/home.PNG'},
@@ -104,6 +105,7 @@ class Gallery extends Component {
             },
             {
                 src: SquareSolitaireImage,
+                alt: 'Square Solitaire project',
                 codeUrl: null,
                 carouselImages: [
                     {src: 'img/square-solitaire/1.png'},
@@ -117,6 +119,7 @@ class Gallery extends Component {
             },
             {
                 src: OCSInventoryImage,
+                alt: 'OCS Inventory project',
                 codeUrl: null,
                 carouselImages: [
                     {src: 'img/ocs-inventory/tableau-de-bord.png'},
@@ -134,6 +137,7 @@ class Gallery extends Component {
             },
             {
                 src: GestionGreveImage,
+                alt: 'Gestion des grèves project',
                 codeUrl: null,
                 carouselImages: [
                     {src: 'img/gestion-greve/accueil.PNG'},
@@ -153,6 +157,7 @@ class Gallery extends Component {
             },
             {
                 src: GimeImage,
+                alt: 'GIME project',
                 codeUrl: null,
                 carouselImages: [
                     {src: 'img/GIME/home.PNG'},
@@ -185,19 +190,19 @@ class Gallery extends Component {
                     className="masonry__grid"
                     columnClassName="masonry__column"
                 >
-                    {gridImages.map(img => (
-                        <div className="masonry__item">
+                    {gridImages.map((img, key) => (
+                        <div className="masonry__item" key={key}>
                             <div className="masonry__item-content">
-                                <a className="masonry__item-btn" title="voir plus" onClick={img.toggleModal}><FontAwesomeIcon icon={faEye} /></a>
+                                <a className="masonry__item-btn" title="voir plus" onClick={img.toggleModal}><FontAwesomeIcon icon={faEye}/></a>
                                 {img.codeLink != null ? <a className="masonry__item-btn" title="voir code"><FontAwesomeIcon icon={faCode} /></a> : null}
                             </div>
-                            <img src={img.src} />
+                            <img src={img.src} alt={img.alt}/>
                         </div>
                     ))}
                 </Masonry>
 
-                {gridImages.map(img => (
-                    <ModalGateway>
+                {gridImages.map((img, key) => (
+                    <ModalGateway key={key}>
                         {img.modalIsOpen ? (
                             <Modal onClose={img.toggleModal} >
                                 <Carousel views={img.carouselImages} />

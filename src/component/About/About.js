@@ -14,11 +14,12 @@ class About extends Component {
                 <div className="about__wrapper">
                     <div className="about__text-wrapper">
                         <p className="about__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nihil, quasi, doloremque illo amet cum ipsa nobis labore voluptatem eum quaerat nam iure eos sit corporis voluptas vero nostrum! Enim!
+                            Étudiant en licence professionnelle Développeur web et multimédia option Développement mobile, je souhaite poursuivre mes études mastère. Afin d’approfondir mes connaissances et mieux m’insérer dans ce métier, j’ai choisi la voie de l’alternance. À présent, je suis à la recherche d’une école me permettant d’allier enseignement théorique et formation pratique.
                         </p>
-                        <p className="about__text">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dignissimos officiis perferendis distinctio perspiciatis rerum quibusdam labore fuga tempore ut iusto beatae eveniet totam error accusamus excepturi commodi quas! Pariatur.
-                        </p>
+                        {/* <p className="about__text">
+                            Ce portofolio vous permettra de découvrir mes compétences et experiences professionnelles.
+                            Il sera mis à jour au fur et à mesure du déroulement de ma formation, me permettant de présenter mes projets personnels, scolaires ou professionnels sur lesquels j'aurais la chance de travailler.
+                        </p> */}
                     </div>
                     <div className="about__curriculum">
                         <FontAwesomeIcon icon={faFileAlt} />

@@ -8,7 +8,7 @@ class Footer extends Component {
         return (
             <footer className="footer ">
                 
-                <div class="footer__tags">
+                <div className="footer__tags">
                     <h3 className="html-tags ml-10">&lt;/body&gt;</h3><br/>
                     <h3 className="html-tags inline-block">&lt;/html&gt;</h3> 
                 </div>
