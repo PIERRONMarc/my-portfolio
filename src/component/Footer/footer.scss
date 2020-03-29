@@ -31,6 +31,14 @@
         margin: 0 1rem;
         color:$secondary-color;
         font-size: 6em;
+        & a {
+            color: inherit;
+            transition: all .15s ease-out;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
     }
 
     &__tags {
