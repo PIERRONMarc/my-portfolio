@@ -18,8 +18,12 @@ class Footer extends Component {
                 <div className="footer__social-wrapper">
                     <h3 className="html-tags inline-block">&lt;!-- Socials : </h3>
                     <ul className="footer__social">
-                        <li className="footer__social-item"><a href="https://www.linkedin.com/in/marc-pierron" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                        <li className="footer__social-item"><a href="https://github.com/PIERRONMarc" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a></li>
+                        <li className="footer__social-item">
+                            <a href="https://www.linkedin.com/in/marc-pierron" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        </li>
+                        <li className="footer__social-item">
+                            <a href="https://github.com/PIERRONMarc" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a>
+                        </li>
                     </ul>
                     <h3 className="html-tags inline-block">--&gt;</h3>
                 </div>

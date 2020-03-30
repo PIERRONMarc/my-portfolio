@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './about.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
+import Curriculum from '../../assets/Curriculum.pdf';
 
 class About extends Component {
-    render() { 
+    render() {  
         return (
             <section className="about">
                 <div className="title-wrapper">
@@ -21,9 +22,7 @@ class About extends Component {
                             Il sera mis à jour au fur et à mesure du déroulement de ma formation, me permettant de présenter mes projets personnels, scolaires ou professionnels sur lesquels j'aurais la chance de travailler.
                         </p> */}
                     </div>
-                    <div className="about__curriculum">
-                        <FontAwesomeIcon icon={faFileAlt} />
-                    </div>
+                    <a className="about__curriculum" href={Curriculum} target="_blank"><FontAwesomeIcon icon={faFileAlt} /></a>
                 </div>
             </section>
         );

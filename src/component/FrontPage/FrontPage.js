@@ -14,7 +14,7 @@ class FrontPage extends Component {
                 </div>
                 <div className="front-page__job-wrapper">
                     <h3 className="html-tags align-self-start mr-5">&lt;h2&gt;</h3>
-                    <h2 className="front-page__job">Développeur web full stack / Etudiants</h2>
+                    <h2 className="front-page__job">Développeur web full stack / Étudiant</h2>
                     <h3 className="html-tags align-self-end ml-5">&lt;/h2&gt;</h3>
                 </div>
                 <FontAwesomeIcon icon={faChevronDown} size="3x" className="front-page__chevron"/>
