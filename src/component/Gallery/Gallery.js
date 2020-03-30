@@ -95,9 +95,9 @@ class Gallery extends Component {
                 alt: 'Integration guide project',
                 codeUrl: null,
                 carouselImages: [
-                    {src: 'img/integration/home.PNG'},
-                    {src: 'img/integration/presentation.PNG'},
-                    {src: 'img/integration/role-manager.PNG'}
+                    {src: 'img/Integration/home.PNG'},
+                    {src: 'img/Integration/presentation.PNG'},
+                    {src: 'img/Integration/role-manager.PNG'}
                 ],
                 toggleModal: this.toggleModalIntegration,
                 modalIsOpen: this.state.integrationModalIsOpen,
@@ -171,6 +171,7 @@ class Gallery extends Component {
             },
             
         ];
+
 
         const breakpointColumnsObj = {
             default: 3,
