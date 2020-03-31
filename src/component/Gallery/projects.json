@@ -53,7 +53,7 @@
     "ocsInventory": {
         "title": "OCS Inventory",
         "context": "Projet professionnel",
-        "description": "Interface de supervision du parc informatique. Plugin développé pour la société ACB78.",
+        "description": "Interface de supervision d'un parc informatique. Plugin développé pour la société ACB78.",
         "appUrl": null,
         "codeLink": null,
         "screens": [

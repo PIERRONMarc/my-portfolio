@@ -9,18 +9,17 @@ class About extends Component {
         return (
             <section className="about">
                 <div className="title-wrapper">
-                    <h1 className="title">À propos de <span className="title--highlight">moi</span></h1>
+                    <h1 className="title">Bonjour, je suis <span className="title--highlight">marc.</span></h1>
                 </div>
                 {/* <div className="p-relative"> */}
                 <div className="about__wrapper">
                     <div className="about__text-wrapper">
                         <p className="about__text">
-                            Étudiant en licence professionnelle Développeur web et multimédia option Développement mobile, je souhaite poursuivre mes études mastère. Afin d’approfondir mes connaissances et mieux m’insérer dans ce métier, j’ai choisi la voie de l’alternance. À présent, je suis à la recherche d’une école me permettant d’allier enseignement théorique et formation pratique.
+                            Étudiant / alternant développeur full-stack à la CPAM des Yvelines. Passionné de jeux vidéos et d'e-sport. À la recherche d’un mastère dans le développement web.
                         </p>
-                        {/* <p className="about__text">
-                            Ce portofolio vous permettra de découvrir mes compétences et experiences professionnelles.
-                            Il sera mis à jour au fur et à mesure du déroulement de ma formation, me permettant de présenter mes projets personnels, scolaires ou professionnels sur lesquels j'aurais la chance de travailler.
-                        </p> */}
+                        <p className="about__text">
+                            J'aime résoudre des problèmes. D'abord spécialisé back-end, je me suis ensuite intéressé au front-end et au développement d'application mobile. Je réalise maintenant des projets de leur conception, à leur mise en production.
+                        </p>
                     </div>
                     <a className="about__curriculum" href={Curriculum} target="_blank"><FontAwesomeIcon icon={faFileAlt} /></a>
                 </div>
