@@ -1,0 +1,74 @@
+@import '../../assets/styles/colors.scss';
+
+.carouselFooter {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    
+
+    &__wrapper {
+        background-color: $bg-color;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 80vw;
+    }
+
+    &__title {
+        font-size: 2.4em;
+        margin: 0;
+        text-transform: uppercase;
+
+        &-wrapper {
+            padding: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__context {
+        margin:0;
+        font-size: 1.2em;
+        text-transform: lowercase;
+        color: $primary-color;
+    }
+
+    &__description {
+        max-width: 50vw;
+        font-size: 1.2em;
+        padding-right: 1rem;
+    }
+
+    &__more {
+      
+        display: inline-block;
+        padding: 0.5rem 3rem;
+        border:0.16em solid $primary-color;
+        box-sizing: border-box;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.15s;
+        color: $primary-color;
+        font-size: 1.2em;
+        margin: 0 1rem;
+
+       
+        &:hover {
+            background-color: $primary-color;
+            color:white;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+   
+    .carouselFooter {
+        &__wrapper {
+            padding-bottom: 1rem;
+        }
+    }
+}

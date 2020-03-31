@@ -1,0 +1,103 @@
+{
+    "marsRover": {
+        "title": "Mars Rover",
+        "context": "Projet universitaire",
+        "description": "Mini-jeu 2D dans lequel deux rovers aux compétences différentes font la course jusqu'à un point donné.",
+        "appUrl": null,
+        "codeLink": null,
+        "screens": [
+            {"src": "img/mars-rover/home.PNG"},
+            {"src": "img/mars-rover/rover-selection.PNG"},
+            {"src": "img/mars-rover/map-selection.PNG"},
+            {"src": "img/mars-rover/map-customization.PNG"},
+            {"src": "img/mars-rover/map-difficulty.PNG"},
+            {"src": "img/mars-rover/game.PNG"}
+        ]
+    },
+    "FNPEIS": {
+        "title": "Site FNPEIS",
+        "context": "Projet professionnel",
+        "description": "Site d'appel à projet de la CPAM des Yvelines.",
+        "appUrl": "https://www.projets.cpam-versailles.fr/",
+        "codeLink": null,
+        "screens": [
+            {"src": "img/FNPEIS/thematique.PNG"},
+            {"src": "img/FNPEIS/mission-centrale.PNG"}
+        ]
+    },
+    "integration": {
+        "title": "Guide d'intégration",
+        "context": "Projet professionnel",
+        "description": "Guide d'intégration de la CPAM des Yvelines.",
+        "appUrl": "https://www.integration.cpam-versailles.fr/",
+        "codeLink": null,
+        "screens": [
+            {"src": "img/Integration/home.PNG"},
+            {"src": "img/Integration/presentation.PNG"},
+            {"src": "img/Integration/role-manager.PNG"}
+        ]
+    },
+    "squareSolitaire": {
+        "title": "Square Solitaire",
+        "context": "Projet personnel",
+        "description": "Inspiré du jeu de plateau, le joueur déplace ses pions dans le but de n'en avoir plus qu'un seul.",
+        "appUrl": "https://play.google.com/store/apps/details?id=fr.free.ma.pierron.squaresolitaire",
+        "codeLink": null,
+        "screens": [
+            {"src": "img/square-solitaire/1.png"},
+            {"src": "img/square-solitaire/2.png"},
+            {"src": "img/square-solitaire/3.png"},
+            {"src": "img/square-solitaire/4.png"}
+        ]
+    },
+    "ocsInventory": {
+        "title": "OCS Inventory",
+        "context": "Projet professionnel",
+        "description": "Interface de supervision du parc informatique. Plugin développé pour la société ACB78.",
+        "appUrl": null,
+        "codeLink": null,
+        "screens": [
+            {"src": "img/ocs-inventory/tableau-de-bord.png"},
+            {"src": "img/ocs-inventory/creation-sonde.png"},
+            {"src": "img/ocs-inventory/liste-sonde.png"},
+            {"src": "img/ocs-inventory/configuration.png"},
+            {"src": "img/ocs-inventory/snmp.png"},
+            {"src": "img/ocs-inventory/nas.png"},
+            {"src": "img/ocs-inventory/printer.png"},
+            {"src": "img/ocs-inventory/undefined.png"}
+        ]
+    },
+    "gestionDesGreves": {
+        "title": "Gestion des grèves",
+        "context": "Projet professionnel",
+        "description": "Application web de gestion des grévistes de la CPAM des Yvelines.",
+        "appUrl": null,
+        "codeLink": null,
+        "screens": [
+            {"src": "img/gestion-greve/accueil.PNG"},
+            {"src": "img/gestion-greve/annuel.PNG"},
+            {"src": "img/gestion-greve/creation-greve.PNG"},
+            {"src": "img/gestion-greve/direction.PNG"},
+            {"src": "img/gestion-greve/fermeture-accueil.PNG"},
+            {"src": "img/gestion-greve/service.PNG"},
+            {"src": "img/gestion-greve/gestion-agents.PNG"},
+            {"src": "img/gestion-greve/resultat-entite.PNG"},
+            {"src": "img/gestion-greve/synthese-generale.PNG"}
+        ]
+    },
+    "GIME": {
+        "title": "GIME",
+        "context": "Projet professionnel",
+        "description": "Gestion Informatique Mouvement Effectif, application web faisant abstraction à GLPI en n'affichant que les champs pertinant d'un ticket à l'utilisateur afin de respecter le règlement RGPD.",
+        "appUrl": null,
+        "codeLink": null,
+        "screens": [
+            {"src": "img/GIME/home.PNG"},
+            {"src": "img/GIME/1.PNG"},
+            {"src": "img/GIME/2.PNG"},
+            {"src": "img/GIME/3.PNG"}
+        ]
+    }
+}
+
+

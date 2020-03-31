@@ -13,6 +13,16 @@ import GestionGreveImage from '../../assets/img/grid/gestion-des-greves.PNG';
 import GimeImage from '../../assets/img/grid/GIME.PNG';
 import OCSInventoryImage from '../../assets/img/grid/ocs-inventory.png';
 import MarsRoverImage from '../../assets/img/grid/mars-rover.PNG';
+import CarouselFooter from './CarouselFooter';
+import Projects from './projects.json';
+
+const customStyles = {
+    view: () => ({
+      // none of react-images styles are passed to <View />
+      height: 0,
+      width: 1,
+    })
+  }
 
 class Gallery extends Component {
 
@@ -56,118 +66,69 @@ class Gallery extends Component {
     toggleModalGime = () => {
         this.setState(state => ({ gimeModalIsOpen: !state.gimeModalIsOpen }));
     }
+    
+
+    getCarouselImages = (project) => project.screens.map((screen) => {
+        return {
+            src: screen.src,
+            ...project
+        }
+    })
+
+    
 
 
     render() { 
 
         const gridImages = [
             {
+                ...Projects.marsRover,
                 src: MarsRoverImage,
-                alt: 'Mars Rover project',
-                codeUrl: null,
-                carouselImages: [
-                    {src: 'img/mars-rover/home.PNG'},
-                    // {src: 'img/mars-rover/instructions.PNG'},
-                    {src: 'img/mars-rover/rover-selection.PNG'},
-                    {src: 'img/mars-rover/map-selection.PNG'},
-                    {src: 'img/mars-rover/map-customization.PNG'},
-                    {src: 'img/mars-rover/map-difficulty.PNG'},
-                    {src: 'img/mars-rover/game.PNG'}
-                ],
+                carouselImages: this.getCarouselImages(Projects.marsRover),
                 toggleModal: this.toggleModalMarsRover,
                 modalIsOpen: this.state.marsRoverModalIsOpen,
-                codeLink: null,
             },
             {
+                ...Projects.FNPEIS,
                 src: FNPEISImage,
-                alt: 'FNPEIS project',
-                codeUrl: null,
-                carouselImages: [
-                    {src: 'img/FNPEIS/thematique.PNG'},
-                    {src: 'img/FNPEIS/mission-centrale.PNG'},
-                ],
+                carouselImages: this.getCarouselImages(Projects.FNPEIS),
                 toggleModal: this.toggleModalFnpeis,
                 modalIsOpen: this.state.fnpeisModalIsOpen,
-                codeLink: null,
             },
             {
+                ...Projects.integration,
                 src: IntegrationImage,
-                alt: 'Integration guide project',
-                codeUrl: null,
-                carouselImages: [
-                    {src: 'img/Integration/home.PNG'},
-                    {src: 'img/Integration/presentation.PNG'},
-                    {src: 'img/Integration/role-manager.PNG'}
-                ],
+                carouselImages: this.getCarouselImages(Projects.integration),
                 toggleModal: this.toggleModalIntegration,
                 modalIsOpen: this.state.integrationModalIsOpen,
-                codeLink: null,
             },
             {
+                ...Projects.squareSolitaire,
                 src: SquareSolitaireImage,
-                alt: 'Square Solitaire project',
-                codeUrl: null,
-                carouselImages: [
-                    {src: 'img/square-solitaire/1.png'},
-                    {src: 'img/square-solitaire/2.png'},
-                    {src: 'img/square-solitaire/3.png'},
-                    {src: 'img/square-solitaire/4.png'},
-                ],
+                carouselImages: this.getCarouselImages(Projects.squareSolitaire),
                 toggleModal: this.toggleModalSquareSolitaire,
                 modalIsOpen: this.state.squareSolitaireModelIsOpen,
-                codeLink: null,
             },
             {
+                ...Projects.ocsInventory,
                 src: OCSInventoryImage,
-                alt: 'OCS Inventory project',
-                codeUrl: null,
-                carouselImages: [
-                    {src: 'img/ocs-inventory/tableau-de-bord.png'},
-                    {src: 'img/ocs-inventory/creation-sonde.png'},
-                    {src: 'img/ocs-inventory/liste-sonde.png'},
-                    {src: 'img/ocs-inventory/configuration.png'},
-                    {src: 'img/ocs-inventory/snmp.png'},
-                    {src: 'img/ocs-inventory/nas.png'},
-                    {src: 'img/ocs-inventory/printer.png'},
-                    {src: 'img/ocs-inventory/undefined.png'},
-                ],
+                carouselImages: this.getCarouselImages(Projects.ocsInventory),
                 toggleModal: this.toggleModalOcsInventory,
                 modalIsOpen: this.state.ocsInventoryModalIsOpen,
-                codeLink: null,
             },
             {
+                ...Projects.gestionDesGreves,
                 src: GestionGreveImage,
-                alt: 'Gestion des grèves project',
-                codeUrl: null,
-                carouselImages: [
-                    {src: 'img/gestion-greve/accueil.PNG'},
-                    {src: 'img/gestion-greve/annuel.PNG'},
-                    {src: 'img/gestion-greve/creation-greve.PNG'},
-                    {src: 'img/gestion-greve/direction.PNG'},
-                    {src: 'img/gestion-greve/fermeture-accueil.PNG'},
-                    {src: 'img/gestion-greve/gestion-agents.PNG'},
-                    {src: 'img/gestion-greve/mail.PNG'},
-                    {src: 'img/gestion-greve/resultat-entite.PNG'},
-                    {src: 'img/gestion-greve/service.PNG'},
-                    {src: 'img/gestion-greve/synthese-generale.PNG'},
-                ],
+                carouselImages: this.getCarouselImages(Projects.gestionDesGreves),
                 toggleModal: this.toggleModalGestionGreve,
                 modalIsOpen: this.state.gestionGreveModalIsOpen,
-                codeLink: null,
             },
             {
+                ...Projects.GIME,
                 src: GimeImage,
-                alt: 'GIME project',
-                codeUrl: null,
-                carouselImages: [
-                    {src: 'img/GIME/home.PNG'},
-                    {src: 'img/GIME/1.PNG'},
-                    {src: 'img/GIME/2.PNG'},
-                    {src: 'img/GIME/3.PNG'}
-                ],
+                carouselImages: this.getCarouselImages(Projects.GIME),
                 toggleModal: this.toggleModalGime,
                 modalIsOpen: this.state.gimeModalIsOpen,
-                codeLink: null,
             },
             
         ];
@@ -197,7 +158,7 @@ class Gallery extends Component {
                                 <a className="masonry__item-btn" title="voir plus" onClick={img.toggleModal}><FontAwesomeIcon icon={faEye}/></a>
                                 {img.codeLink != null ? <a className="masonry__item-btn" title="voir code"><FontAwesomeIcon icon={faCode} /></a> : null}
                             </div>
-                            <img src={img.src} alt={img.alt}/>
+                            <img src={img.src} alt={img.title}/>
                         </div>
                     ))}
                 </Masonry>
@@ -206,7 +167,7 @@ class Gallery extends Component {
                     <ModalGateway key={key}>
                         {img.modalIsOpen ? (
                             <Modal onClose={img.toggleModal} >
-                                <Carousel views={img.carouselImages} />
+                                <Carousel components={{ Footer: CarouselFooter }} views={img.carouselImages} />
                             </Modal>
                         ) : null}
                     </ModalGateway> 
