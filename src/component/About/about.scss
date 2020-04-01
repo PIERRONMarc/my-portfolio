@@ -1,22 +1,17 @@
 @import '../../assets/styles/colors.scss';
 
 .about {
-    margin-top: 5vh;
+    padding-top: 6vh;
     margin-bottom: 20vh;
     &__text {
         font-size: 1.8em;
 
         &-wrapper {
-            // position: relative;
             width: 60vw;
         }
     }
 
     &__curriculum {
-        // position: absolute;
-        // top: 50%;
-        // right: 10%;
-        // transform: translateY(-50%);
         align-self: center;
         border-radius: 50%;
         height: 4.5rem;
@@ -41,7 +36,6 @@
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
-        // align-items: center;
     }
 }
 

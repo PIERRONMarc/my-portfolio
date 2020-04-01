@@ -1,7 +1,5 @@
 import React from 'react';
 import './CarouselFooter.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
 
 const CarouselFooter = ({ currentView, isModal }) => {
 
@@ -20,7 +18,7 @@ const CarouselFooter = ({ currentView, isModal }) => {
                     </p>
                     { appUrl != null ?
                         (
-                            <a href={appUrl} className="carouselFooter__more" target="_blank">Voir plus</a>
+                            <a href={appUrl} className="carouselFooter__more" target="_blank" rel="noreferrer noopener">Voir plus</a>
                         ) 
                     : null}
             </div>

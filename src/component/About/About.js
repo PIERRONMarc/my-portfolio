@@ -3,15 +3,28 @@ import './about.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
 import Curriculum from '../../assets/Curriculum.pdf';
+import IntervalContext from '../../context/ChevronIntervalContext';
 
 class About extends Component {
+
+    static contextType = IntervalContext;
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.clearChevronInterval);
+    }
+
+    clearChevronInterval = () => {
+        clearInterval(this.context.chevronInterval);
+        window.removeEventListener('scroll', this.clearChevronInterval);
+    }
+    
     render() {  
+        
         return (
-            <section className="about">
+            <section className="about" id="about">
                 <div className="title-wrapper">
                     <h1 className="title">Bonjour, je suis <span className="title--highlight">marc.</span></h1>
                 </div>
-                {/* <div className="p-relative"> */}
                 <div className="about__wrapper">
                     <div className="about__text-wrapper">
                         <p className="about__text">
@@ -21,7 +34,7 @@ class About extends Component {
                             J'aime résoudre des problèmes. D'abord spécialisé back-end, je me suis ensuite intéressé au front-end et au développement d'application mobile. Je réalise maintenant des projets de leur conception, à leur mise en production.
                         </p>
                     </div>
-                    <a className="about__curriculum" href={Curriculum} target="_blank"><FontAwesomeIcon icon={faFileAlt} /></a>
+                    <a className="about__curriculum" href={Curriculum} target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faFileAlt} /></a>
                 </div>
             </section>
         );

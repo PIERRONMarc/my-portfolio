@@ -16,14 +16,6 @@ import MarsRoverImage from '../../assets/img/grid/mars-rover.PNG';
 import CarouselFooter from './CarouselFooter';
 import Projects from './projects.json';
 
-const customStyles = {
-    view: () => ({
-      // none of react-images styles are passed to <View />
-      height: 0,
-      width: 1,
-    })
-  }
-
 class Gallery extends Component {
 
     constructor(props) {
@@ -40,30 +32,37 @@ class Gallery extends Component {
         }
     }
 
-    toggleModalMarsRover = () => {
+    toggleModalMarsRover = (event) => {
+        event.preventDefault();
         this.setState(state => ({ marsRoverModalIsOpen: !state.marsRoverModalIsOpen }));
     }
 
-    toggleModalFnpeis = () => {
+    toggleModalFnpeis = (event) => {
+        event.preventDefault();
         this.setState(state => ({ fnpeisModalIsOpen: !state.fnpeisModalIsOpen }));
     }
     
-    toggleModalIntegration = () => {
+    toggleModalIntegration = (event) => {
+        event.preventDefault();
         this.setState(state => ({ integrationModalIsOpen: !state.integrationModalIsOpen }));
     }
 
-    toggleModalSquareSolitaire = () => {
+    toggleModalSquareSolitaire = (event) => {
+        event.preventDefault();
         this.setState(state => ({ squareSolitaireModelIsOpen: !state.squareSolitaireModelIsOpen }));
     }
 
-    toggleModalOcsInventory = () => {
+    toggleModalOcsInventory = (event) => {
+        event.preventDefault();
         this.setState(state => ({ ocsInventoryModalIsOpen: !state.ocsInventoryModalIsOpen }));
     }
 
-    toggleModalGestionGreve = () => {
+    toggleModalGestionGreve = (event) => {
+        event.preventDefault();
         this.setState(state => ({ gestionGreveModalIsOpen: !state.gestionGreveModalIsOpen }));
     }
-    toggleModalGime = () => {
+    toggleModalGime = (event) => {
+        event.preventDefault();
         this.setState(state => ({ gimeModalIsOpen: !state.gimeModalIsOpen }));
     }
     
@@ -155,8 +154,8 @@ class Gallery extends Component {
                     {gridImages.map((img, key) => (
                         <div className="masonry__item" key={key}>
                             <div className="masonry__item-content">
-                                <a className="masonry__item-btn" title="voir plus" onClick={img.toggleModal}><FontAwesomeIcon icon={faEye}/></a>
-                                {img.codeLink != null ? <a className="masonry__item-btn" title="voir code"><FontAwesomeIcon icon={faCode} /></a> : null}
+                                <a href="./#" className="masonry__item-btn" title="voir plus" onClick={img.toggleModal}><FontAwesomeIcon icon={faEye}/></a>
+                                {img.codeLink != null ? <a className="masonry__item-btn" title="voir code" href={img.codeLink}><FontAwesomeIcon icon={faCode} /></a> : null}
                             </div>
                             <img src={img.src} alt={img.title}/>
                         </div>

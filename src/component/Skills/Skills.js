@@ -13,25 +13,25 @@ class Skills extends Component {
                     </div>
                     <ul className="skills__icons">
                         <li className="skills__item">
-                            <FontAwesomeIcon icon={faSymfony} size="5x" />
+                            <FontAwesomeIcon icon={faSymfony} size="5x" title="Symfony"/>
                         </li>
                         <li className="skills__item">
-                            <FontAwesomeIcon icon={faReact} size="5x" />
+                            <FontAwesomeIcon icon={faReact} size="5x" title="React"/>
                         </li>
                         <li className="skills__item">
-                            <FontAwesomeIcon icon={faVuejs} size="5x" />
+                            <FontAwesomeIcon icon={faVuejs} size="5x" title="VueJS"/>
                         </li>
                         <li className="skills__item">
-                            <FontAwesomeIcon icon={faGit} size="5x" />
+                            <FontAwesomeIcon icon={faGit} size="5x" title="Git"/>
                         </li>
                         <li className="skills__item">
-                            <FontAwesomeIcon icon={faDocker} size="5x" />
+                            <FontAwesomeIcon icon={faDocker} size="5x" title="Docker"/>
                         </li>
                         <li className="skills__item">
-                            <FontAwesomeIcon icon={faAndroid} size="5x" />
+                            <FontAwesomeIcon icon={faAndroid} size="5x" title="Android"/>
                         </li>
                         <li className="skills__item">
-                            <FontAwesomeIcon icon={faApple} size="5x" />
+                            <FontAwesomeIcon icon={faApple} size="5x" title="IOS"/>
                         </li>
                     </ul>
                 </div>

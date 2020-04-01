@@ -1,10 +1,16 @@
 @import '../../assets/styles/colors.scss';
+@import '../../assets/styles/animate.css';
+
+.shaketest-enter {
+    animation: 0.8s Shake ease;
+}
+
+.shaketest-exit {
+    animation: 0.5s Shake ease;
+}
 
 .front-page {
-
-    // margin-top: 30vh;
-    height: 80vh;
-    // text-align: center;
+    height: 86vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,22 +43,18 @@
         color: $secondary-color;
         font-weight: 300;
         font-style: italic;
-
-        &-wrapper {
-            // margin-top: 10vh;
-        }
     }
 
     &__chevron {
         margin-top: 15vh;
-        // margin-bottom: 10vh;
         cursor: pointer;
-        // justify-self: flex-end;
-        // position: absolute;
         right: 0;
         bottom: 15;
+        color:white;
     }
 }
+
+
 
 
 // Small devices (landscape phones, less than 768px)
