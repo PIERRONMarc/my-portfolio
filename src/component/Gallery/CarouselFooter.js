@@ -14,14 +14,15 @@ const CarouselFooter = ({ currentView, isModal }) => {
                     <h1 className="carouselFooter__title">{title}</h1>
                     <h2 className="carouselFooter__context">{context}</h2>
                 </div>
-                <p className="carouselFooter__description">
-                    {description}
-                </p>
-                { appUrl != null ?
-                    (
-                        <a href={appUrl} className="carouselFooter__more" target="_blank">Voir plus</a>
-                    ) 
-                : null}
+                
+                    <p className="carouselFooter__description">
+                        {description}
+                    </p>
+                    { appUrl != null ?
+                        (
+                            <a href={appUrl} className="carouselFooter__more" target="_blank">Voir plus</a>
+                        ) 
+                    : null}
             </div>
         </div>
     )

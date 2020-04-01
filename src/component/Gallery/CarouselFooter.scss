@@ -14,8 +14,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
         max-width: 80vw;
+        // flex-wrap: wrap;
     }
 
     &__title {
@@ -40,6 +40,10 @@
         max-width: 50vw;
         font-size: 1.2em;
         padding-right: 1rem;
+
+        &-wrapper {
+            display: flex;
+        }
     }
 
     &__more {
@@ -61,14 +65,29 @@
             color:white;
         }
     }
+
+    
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { 
+@media (max-width: 600.98px) { 
    
     .carouselFooter {
         &__wrapper {
             padding-bottom: 1rem;
+            flex-wrap: wrap;
         }
+
+        &__title {
+            &-wrapper {
+                padding: 1rem 0 0.5rem 0;
+            }
+        }
+
+        &__more {
+            margin-top: 0.5rem;
+        }
+
     }
+    
 }
