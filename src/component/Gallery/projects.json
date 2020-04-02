@@ -42,7 +42,7 @@
         "context": "Projet personnel",
         "description": "Inspiré du jeu de plateau, le joueur déplace ses pions dans le but de n'en avoir plus qu'un seul.",
         "appUrl": "https://play.google.com/store/apps/details?id=fr.free.ma.pierron.squaresolitaire",
-        "codeLink": null,
+        "codeLink": "https://github.com/PIERRONMarc/square-solitaire",
         "screens": [
             {"src": "img/square-solitaire/1.png"},
             {"src": "img/square-solitaire/2.png"},
@@ -90,7 +90,7 @@
         "context": "Projet professionnel",
         "description": "Gestion Informatique Mouvement Effectif, application web faisant abstraction à GLPI en n'affichant que les champs pertinant d'un ticket à l'utilisateur afin de respecter le règlement RGPD.",
         "appUrl": null,
-        "codeLink": null,
+        "codeLink": "https://github.com/PIERRONMarc/GIME",
         "screens": [
             {"src": "img/GIME/home.PNG"},
             {"src": "img/GIME/1.PNG"},

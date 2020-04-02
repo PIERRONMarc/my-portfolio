@@ -155,7 +155,7 @@ class Gallery extends Component {
                         <div className="masonry__item" key={key}>
                             <div className="masonry__item-content">
                                 <a href="./#" className="masonry__item-btn" title="voir plus" onClick={img.toggleModal}><FontAwesomeIcon icon={faEye}/></a>
-                                {img.codeLink != null ? <a className="masonry__item-btn" title="voir code" href={img.codeLink}><FontAwesomeIcon icon={faCode} /></a> : null}
+                                {img.codeLink != null ? <a className="masonry__item-btn" title="voir code" href={img.codeLink} target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faCode} /></a> : null}
                             </div>
                             <img src={img.src} alt={img.title}/>
                         </div>
