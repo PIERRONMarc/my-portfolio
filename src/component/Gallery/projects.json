@@ -14,6 +14,31 @@
             {"src": "img/mars-rover/game.PNG"}
         ]
     },
+    "labboite": {
+        "title": "Labboite",
+        "context": "Projet universitaire",
+        "description": "Un site web qui répertorie les outils et logiciels disponible à LabBoîte, le fablab de Cergy-Pontoise.",
+        "appUrl": null,
+        "codeLink": "https://github.com/PIERRONMarc/labboite-documentation",
+        "screens": [
+            {"src": "img/labboite/front-category-index.png"},
+            {"src": "img/labboite/back-category-index.png"},
+            {"src": "img/labboite/back-category-form.png"},
+            {"src": "img/labboite/front-tool-index.png"},
+            {"src": "img/labboite/front-information.png"},
+            {"src": "img/labboite/back-information.png"},
+            {"src": "img/labboite/front-consommable.png"},
+            {"src": "img/labboite/back-consommable-index.png"},
+            {"src": "img/labboite/front-faq.png"},
+            {"src": "img/labboite/back-faq-index.png"},
+            {"src": "img/labboite/back-faq-form.png"},
+            {"src": "img/labboite/front-astuce.png"},
+            {"src": "img/labboite/back-astuce-index.png"},
+            {"src": "img/labboite/back-astuce-form.png"},
+            {"src": "img/labboite/back-user-index.png"},
+            {"src": "img/labboite/back-user-form.png"} 
+        ]
+    },
     "FNPEIS": {
         "title": "Site FNPEIS",
         "context": "Projet professionnel",

@@ -13,6 +13,7 @@ import GestionGreveImage from '../../assets/img/grid/gestion-des-greves.PNG';
 import GimeImage from '../../assets/img/grid/GIME.PNG';
 import OCSInventoryImage from '../../assets/img/grid/ocs-inventory.png';
 import MarsRoverImage from '../../assets/img/grid/mars-rover.PNG';
+import LabboiteImage from '../../assets/img/grid/labboite.png';
 import CarouselFooter from './CarouselFooter';
 import Projects from './projects.json';
 
@@ -28,7 +29,8 @@ class Gallery extends Component {
             squareSolitaireModelIsOpen: false,
             ocsInventoryModalIsOpen: false,
             gestionGreveModalIsOpen: false,
-            gimeModalIsOpen: false
+            gimeModalIsOpen: false,
+            labboiteModalIsOpen: false
         }
     }
 
@@ -65,6 +67,10 @@ class Gallery extends Component {
         event.preventDefault();
         this.setState(state => ({ gimeModalIsOpen: !state.gimeModalIsOpen }));
     }
+    toggleModalLabboite = (event) => {
+        event.preventDefault();
+        this.setState(state => ({ labboiteModalIsOpen: !state.labboiteModalIsOpen }));
+    }
     
 
     getCarouselImages = (project) => project.screens.map((screen) => {
@@ -81,11 +87,18 @@ class Gallery extends Component {
 
         const gridImages = [
             {
-                ...Projects.marsRover,
+                ...Projects.labboite,
                 src: MarsRoverImage,
                 carouselImages: this.getCarouselImages(Projects.marsRover),
                 toggleModal: this.toggleModalMarsRover,
                 modalIsOpen: this.state.marsRoverModalIsOpen,
+            },
+            {
+                ...Projects.labboite,
+                src: LabboiteImage,
+                carouselImages: this.getCarouselImages(Projects.labboite),
+                toggleModal: this.toggleModalLabboite,
+                modalIsOpen: this.state.labboiteModalIsOpen,
             },
             {
                 ...Projects.FNPEIS,
