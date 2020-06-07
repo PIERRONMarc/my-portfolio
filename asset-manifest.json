@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1e68f9c.chunk.css",
-    "main.js": "/static/js/main.3e085368.chunk.js",
-    "main.js.map": "/static/js/main.3e085368.chunk.js.map",
+    "main.css": "/static/css/main.0a06ac33.chunk.css",
+    "main.js": "/static/js/main.b72fa471.chunk.js",
+    "main.js.map": "/static/js/main.b72fa471.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
     "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
-    "static/js/2.a1b093a7.chunk.js": "/static/js/2.a1b093a7.chunk.js",
-    "static/js/2.a1b093a7.chunk.js.map": "/static/js/2.a1b093a7.chunk.js.map",
+    "static/js/2.dd682c7c.chunk.js": "/static/js/2.dd682c7c.chunk.js",
+    "static/js/2.dd682c7c.chunk.js.map": "/static/js/2.dd682c7c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1c9436cdb16c6427b57169f0b8508c95.js": "/precache-manifest.1c9436cdb16c6427b57169f0b8508c95.js",
+    "precache-manifest.799c58643330bb8ad2954f7bd37f30d7.js": "/precache-manifest.799c58643330bb8ad2954f7bd37f30d7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.d1e68f9c.chunk.css.map": "/static/css/main.d1e68f9c.chunk.css.map",
-    "static/js/2.a1b093a7.chunk.js.LICENSE.txt": "/static/js/2.a1b093a7.chunk.js.LICENSE.txt",
+    "static/css/main.0a06ac33.chunk.css.map": "/static/css/main.0a06ac33.chunk.css.map",
+    "static/js/2.dd682c7c.chunk.js.LICENSE.txt": "/static/js/2.dd682c7c.chunk.js.LICENSE.txt",
     "static/media/Curriculum.pdf": "/static/media/Curriculum.3b329747.pdf",
     "static/media/FNPEIS.PNG": "/static/media/FNPEIS.98f858e9.PNG",
     "static/media/GIME.PNG": "/static/media/GIME.d9b407da.PNG",
     "static/media/gestion-des-greves.PNG": "/static/media/gestion-des-greves.e150c772.PNG",
     "static/media/integration.PNG": "/static/media/integration.5b718a41.PNG",
+    "static/media/labboite.png": "/static/media/labboite.6f48b068.png",
     "static/media/index.scss": "/static/media/montserrat-semibolditalic-webfont.d0da9cdf.woff2",
     "static/media/mars-rover.PNG": "/static/media/mars-rover.4525bdb4.PNG",
     "static/media/ocs-inventory.png": "/static/media/ocs-inventory.42ae2bf3.png",
@@ -27,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.c2b20a0b.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.a1b093a7.chunk.js",
-    "static/css/main.d1e68f9c.chunk.css",
-    "static/js/main.3e085368.chunk.js"
+    "static/js/2.dd682c7c.chunk.js",
+    "static/css/main.0a06ac33.chunk.css",
+    "static/js/main.b72fa471.chunk.js"
   ]
 }
